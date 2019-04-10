@@ -1,0 +1,1323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created by SBMLMerge version 1 on 2019-56-10 at 09:56:53 CEST with JSBML version 1.1-alpha. -->
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1">
+	<model metaid="_7fca2c42-a16c-404e-bb86-b5f1a783b2e8" id="Merged_CNA_Syne_RN_SynechocystisPCC6803_">
+		<annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
+	<rdf:Description rdf:about="#_7fca2c42-a16c-404e-bb86-b5f1a783b2e8">
+	<dc:creator>
+	<rdf:Bag>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Family Name</vCard:Family>
+	<vCard:Given>Given Name</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>My@EMail.com</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>Organisation</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	</rdf:Bag>
+	</dc:creator>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+			<listOfUnitDefinitions>
+			<unitDefinition id="mmol_per_gDW_per_hr">
+				<listOfUnits>
+					<unit scale="-3" kind="mole"/>
+					<unit kind="gram" exponent="-1"/>
+					<unit kind="second" multiplier="0.000277777777777778" exponent="-1"/>
+				</listOfUnits>
+			</unitDefinition>
+		</listOfUnitDefinitions>
+		<listOfCompartments>
+			<compartment name="external" id="Comp_00001"/>
+			<compartment name="cytoplasm" id="Comp_00002"/>
+			<compartment name="cytosol" id="Comp_00003"/>
+			<compartment name="periplasmatic space" id="Comp_00004"/>
+			<compartment name="thylakoid membrane" id="Comp_00005"/>
+			<compartment name="carboxysome" id="Comp_00006"/>
+			<compartment name="thylakoid lumen" id="Comp_00007"/>
+		</listOfCompartments>
+		<listOfSpecies>
+			<species compartment="Comp_00002" name="L-Valine_cyt" boundaryCondition="false" id="SP_2066909434_00001">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00183_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Glutamate_cyt" boundaryCondition="false" id="SP_2066909434_00002">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00025_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Isoleucine_cyt" boundaryCondition="false" id="SP_2066909434_00003">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00407_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Threonine_cyt" boundaryCondition="false" id="SP_2066909434_00004">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00188_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Asparagine_cyt" boundaryCondition="false" id="SP_2066909434_00005">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00152_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Leucine_cyt" boundaryCondition="false" id="SP_2066909434_00006">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00123_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Phenylalanine_cyt" boundaryCondition="false" id="SP_2066909434_00007">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00079_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Lysine_cyt" boundaryCondition="false" id="SP_2066909434_00008">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00047_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Alanine_cyt" boundaryCondition="false" id="SP_2066909434_00009">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00041_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Arginine_cyt" boundaryCondition="false" id="SP_2066909434_00010">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00062_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Tyrosine_cyt" boundaryCondition="false" id="SP_2066909434_00011">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00082_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Tryptophan_cyt" boundaryCondition="false" id="SP_2066909434_00012">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00078_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Cysteine_cyt" boundaryCondition="false" id="SP_2066909434_00013">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00097_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Methionine_cyt" boundaryCondition="false" id="SP_2066909434_00014">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00073_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Histidine_cyt" boundaryCondition="false" id="SP_2066909434_00015">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00135_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Glycine_cyt" boundaryCondition="false" id="SP_2066909434_00016">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00037_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Glutamine_cyt" boundaryCondition="false" id="SP_2066909434_00017">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00064_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Proline_cyt" boundaryCondition="false" id="SP_2066909434_00018">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00148_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Aspartate_cyt" boundaryCondition="false" id="SP_2066909434_00019">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00049_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="L-Serine_cyt" boundaryCondition="false" id="SP_2066909434_00020">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00065_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00001" name="H2O_cyt" boundaryCondition="true" id="SP_2066909434_00021">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00001_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Proteincomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00022">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B1_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="dCTP_cyt" boundaryCondition="false" id="SP_2066909434_00023">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00458_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="dTTP_cyt" boundaryCondition="false" id="SP_2066909434_00024">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00459_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="dGTP_cyt" boundaryCondition="false" id="SP_2066909434_00025">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00286_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="dATP_cyt" boundaryCondition="false" id="SP_2066909434_00026">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00131_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Diphosphate_cyt" boundaryCondition="false" id="SP_2066909434_00027">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00013_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="DNAcomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00028">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B2_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="ATP_cyt" boundaryCondition="false" id="SP_2066909434_00029">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00002_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="GTP_cyt" boundaryCondition="false" id="SP_2066909434_00030">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00044_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="UTP_cyt" boundaryCondition="false" id="SP_2066909434_00031">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00075_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="CTP_cyt" boundaryCondition="false" id="SP_2066909434_00032">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00063_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="RNAcomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00033">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B3_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Peptidoglycan_cyt" boundaryCondition="false" id="SP_2066909434_00034">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  E11_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="2,3,2ampapos,3ampapos-Tetrakis(3-hydroxytetradecanoyl)-D-glucosaminyl-1,6-beta-_cyt" boundaryCondition="false" id="SP_2066909434_00035">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C04932_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Cellwallcomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00036">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B4_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Digalactosyl-diacylglycerol_DGDG_cyt" boundaryCondition="false" id="SP_2066909434_00037">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C06037_DGDG_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Sulfoquinovosyldiacylglycerol_SQDG_cyt" boundaryCondition="false" id="SP_2066909434_00038">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C13508_SQDG_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Phosphatidylglycerol_PG_cyt" boundaryCondition="false" id="SP_2066909434_00039">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00344_PG_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol_MGDG_cyt" boundaryCondition="false" id="SP_2066909434_00040">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C03692_MGDG_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Lipidcomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00041">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B5_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="NADH_cyt" boundaryCondition="false" id="SP_2066909434_00042">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00004_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="CoA_cyt" boundaryCondition="false" id="SP_2066909434_00043">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00010_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Chorismate_cyt" boundaryCondition="false" id="SP_2066909434_00044">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00251_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Succinyl-CoA_cyt" boundaryCondition="false" id="SP_2066909434_00045">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00091_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Acetyl-CoA_cyt" boundaryCondition="false" id="SP_2066909434_00046">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00024_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="FAD_cyt" boundaryCondition="false" id="SP_2066909434_00047">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00016_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="5,10-Methenyltetrahydrofolate_cyt" boundaryCondition="false" id="SP_2066909434_00048">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00445_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Pyridoxalphosphate_cyt" boundaryCondition="false" id="SP_2066909434_00049">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00018_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="di-trans,poly-cis-Undecaprenyldiphosphate_cyt" boundaryCondition="false" id="SP_2066909434_00050">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C04574_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="NAD+_cyt" boundaryCondition="false" id="SP_2066909434_00051">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00003_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="S-Adenosyl-L-methionine_cyt" boundaryCondition="false" id="SP_2066909434_00052">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00019_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="NADP+_cyt" boundaryCondition="false" id="SP_2066909434_00053">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00006_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="10-Formyltetrahydrofolate_cyt" boundaryCondition="false" id="SP_2066909434_00054">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00234_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Putrescine_cyt" boundaryCondition="false" id="SP_2066909434_00055">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00134_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Thiamindiphosphate_cyt" boundaryCondition="false" id="SP_2066909434_00056">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00068_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="NADPH_cyt" boundaryCondition="false" id="SP_2066909434_00057">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00005_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="HemeO_cyt" boundaryCondition="false" id="SP_2066909434_00058">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C15672_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Spermidine_cyt" boundaryCondition="false" id="SP_2066909434_00059">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00315_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Cobamidecoenzyme_cyt" boundaryCondition="false" id="SP_2066909434_00060">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00194_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Malonyl-CoA_cyt" boundaryCondition="false" id="SP_2066909434_00061">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00083_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Tetrahydrofolate_cyt" boundaryCondition="false" id="SP_2066909434_00062">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00101_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="HemeA_cyt" boundaryCondition="false" id="SP_2066909434_00063">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C15670_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Glutathione_cyt" boundaryCondition="false" id="SP_2066909434_00064">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00051_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="5-Methyltetrahydrofolate_cyt" boundaryCondition="false" id="SP_2066909434_00065">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00440_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Riboflavin_cyt" boundaryCondition="false" id="SP_2066909434_00066">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00255_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Heme_cyt" boundaryCondition="false" id="SP_2066909434_00067">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00032_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Solublepoolcomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00068">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B6_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Fe3+_cyt" boundaryCondition="false" id="SP_2066909434_00069">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C14819_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Sulfate_cyt" boundaryCondition="false" id="SP_2066909434_00070">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00059_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Zinc_cyt" boundaryCondition="false" id="SP_2066909434_00071">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00038_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Fe2+_cyt" boundaryCondition="false" id="SP_2066909434_00072">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C14818_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Molybdate_cyt" boundaryCondition="false" id="SP_2066909434_00073">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C06232_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Sodium_cyt" boundaryCondition="false" id="SP_2066909434_00074">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C01330_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Orthophosphate_cyt" boundaryCondition="false" id="SP_2066909434_00075">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00009_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Manganese_cyt" boundaryCondition="false" id="SP_2066909434_00076">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00034_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Potassium_cyt" boundaryCondition="false" id="SP_2066909434_00077">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00238_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Magnesium_cyt" boundaryCondition="false" id="SP_2066909434_00078">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00305_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Cobaltion_cyt" boundaryCondition="false" id="SP_2066909434_00079">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00175_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Copper_cyt" boundaryCondition="false" id="SP_2066909434_00080">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00070_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Calcium_cyt" boundaryCondition="false" id="SP_2066909434_00081">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00076_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="NH4+_cyt" boundaryCondition="false" id="SP_2066909434_00082">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C01342_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Ioncomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00083">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B7_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="gamma-Tocopherol_cyt" boundaryCondition="false" id="SP_2066909434_00084">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C02483_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Echinenone_cyt" boundaryCondition="false" id="SP_2066909434_00085">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C08592_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="delta-Tocopherol_cyt" boundaryCondition="false" id="SP_2066909434_00086">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C14151_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="alpha-Tocopherol_cyt" boundaryCondition="false" id="SP_2066909434_00087">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C02477_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Zeaxanthin_cyt" boundaryCondition="false" id="SP_2066909434_00088">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C06098_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Chlorophylla_cyt" boundaryCondition="false" id="SP_2066909434_00089">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C05306_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="beta-Tocopherol_cyt" boundaryCondition="false" id="SP_2066909434_00090">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C14152_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="beta-Carotene_cyt" boundaryCondition="false" id="SP_2066909434_00091">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C02094_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="gamma-Carotene_cyt" boundaryCondition="false" id="SP_2066909434_00092">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C05435_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Phylloquinone_cyt" boundaryCondition="false" id="SP_2066909434_00093">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C02059_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Pigmentcomponentofbiomass_cyt" boundaryCondition="false" id="SP_2066909434_00094">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B8_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="Glycogen_cyt" boundaryCondition="false" id="SP_2066909434_00095">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00182_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00002" name="ADP_cyt" boundaryCondition="false" id="SP_2066909434_00096">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  C00008_cyt</p>
+</body>
+				</notes>
+			</species>
+			<species compartment="Comp_00001" name="Biomass_ext" boundaryCondition="true" id="SP_2066909434_00097">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+     <p>&lt;notes>
+		&lt;body xmlns="http://www.w3.org/1999/xhtml">
+		&lt;/body>
+&lt;/notes></p>
+  <p>oldId :  B0_ext</p>
+</body>
+				</notes>
+			</species>
+		</listOfSpecies>
+		<listOfReactions>
+			<reaction name="BM0001" id="Re_2066909434_00001" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0001</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00001" stoichiometry="0.608"/>
+					<speciesReference species="SP_2066909434_00002" stoichiometry="0.546"/>
+					<speciesReference species="SP_2066909434_00003" stoichiometry="0.566"/>
+					<speciesReference species="SP_2066909434_00004" stoichiometry="0.496"/>
+					<speciesReference species="SP_2066909434_00005" stoichiometry="0.366"/>
+					<speciesReference species="SP_2066909434_00006" stoichiometry="1.029"/>
+					<speciesReference species="SP_2066909434_00007" stoichiometry="0.362"/>
+					<speciesReference species="SP_2066909434_00008" stoichiometry="0.378"/>
+					<speciesReference species="SP_2066909434_00009" stoichiometry="0.766"/>
+					<speciesReference species="SP_2066909434_00010" stoichiometry="0.455"/>
+					<speciesReference species="SP_2066909434_00011" stoichiometry="0.263"/>
+					<speciesReference species="SP_2066909434_00012" stoichiometry="0.14"/>
+					<speciesReference species="SP_2066909434_00013" stoichiometry="0.09"/>
+					<speciesReference species="SP_2066909434_00014" stoichiometry="0.177"/>
+					<speciesReference species="SP_2066909434_00015" stoichiometry="0.168"/>
+					<speciesReference species="SP_2066909434_00016" stoichiometry="0.666"/>
+					<speciesReference species="SP_2066909434_00017" stoichiometry="0.502"/>
+					<speciesReference species="SP_2066909434_00018" stoichiometry="0.463"/>
+					<speciesReference species="SP_2066909434_00019" stoichiometry="0.454"/>
+					<speciesReference species="SP_2066909434_00020" stoichiometry="0.524"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00021" stoichiometry="9.0197"/>
+					<speciesReference species="SP_2066909434_00022" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0002" id="Re_2066909434_00002" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0002</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00023" stoichiometry="0.7749"/>
+					<speciesReference species="SP_2066909434_00024" stoichiometry="0.8517"/>
+					<speciesReference species="SP_2066909434_00025" stoichiometry="0.7772"/>
+					<speciesReference species="SP_2066909434_00026" stoichiometry="0.8487"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00027" stoichiometry="3.2525"/>
+					<speciesReference species="SP_2066909434_00028" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0003" id="Re_2066909434_00003" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0003</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00029" stoichiometry="0.73"/>
+					<speciesReference species="SP_2066909434_00030" stoichiometry="0.808"/>
+					<speciesReference species="SP_2066909434_00031" stoichiometry="0.8012"/>
+					<speciesReference species="SP_2066909434_00032" stoichiometry="0.7799"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00033" stoichiometry="1"/>
+					<speciesReference species="SP_2066909434_00027" stoichiometry="3.1191"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0004" id="Re_2066909434_00004" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0004</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00034" stoichiometry="0.4276"/>
+					<speciesReference species="SP_2066909434_00035" stoichiometry="0.4276"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00036" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0005" id="Re_2066909434_00005" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0005</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00037" stoichiometry="0.265"/>
+					<speciesReference species="SP_2066909434_00038" stoichiometry="0.255"/>
+					<speciesReference species="SP_2066909434_00039" stoichiometry="0.1"/>
+					<speciesReference species="SP_2066909434_00040" stoichiometry="0.38"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00041" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0006" id="Re_2066909434_00006" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0006</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00042" stoichiometry="0.002"/>
+					<speciesReference species="SP_2066909434_00043" stoichiometry="0.006"/>
+					<speciesReference species="SP_2066909434_00044" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00045" stoichiometry="0.003"/>
+					<speciesReference species="SP_2066909434_00046" stoichiometry="0.01"/>
+					<speciesReference species="SP_2066909434_00047" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00048" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00049" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00050" stoichiometry="0.002"/>
+					<speciesReference species="SP_2066909434_00051" stoichiometry="0.062"/>
+					<speciesReference species="SP_2066909434_00052" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00053" stoichiometry="0.004"/>
+					<speciesReference species="SP_2066909434_00054" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00055" stoichiometry="1.147"/>
+					<speciesReference species="SP_2066909434_00056" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00057" stoichiometry="0.012"/>
+					<speciesReference species="SP_2066909434_00058" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00059" stoichiometry="0.233"/>
+					<speciesReference species="SP_2066909434_00060" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00061" stoichiometry="0.001"/>
+					<speciesReference species="SP_2066909434_00062" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00063" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00064" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00065" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00066" stoichiometry="0.008"/>
+					<speciesReference species="SP_2066909434_00067" stoichiometry="0.008"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00068" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0007" id="Re_2066909434_00007" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0007</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00069" stoichiometry="0.682"/>
+					<speciesReference species="SP_2066909434_00070" stoichiometry="0.379"/>
+					<speciesReference species="SP_2066909434_00071" stoichiometry="0.303"/>
+					<speciesReference species="SP_2066909434_00072" stoichiometry="0.682"/>
+					<speciesReference species="SP_2066909434_00073" stoichiometry="0.303"/>
+					<speciesReference species="SP_2066909434_00074" stoichiometry="0.379"/>
+					<speciesReference species="SP_2066909434_00075" stoichiometry="0.379"/>
+					<speciesReference species="SP_2066909434_00076" stoichiometry="0.303"/>
+					<speciesReference species="SP_2066909434_00077" stoichiometry="17.04"/>
+					<speciesReference species="SP_2066909434_00078" stoichiometry="0.757"/>
+					<speciesReference species="SP_2066909434_00079" stoichiometry="0.303"/>
+					<speciesReference species="SP_2066909434_00080" stoichiometry="0.303"/>
+					<speciesReference species="SP_2066909434_00081" stoichiometry="0.454"/>
+					<speciesReference species="SP_2066909434_00082" stoichiometry="1.136"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00083" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0008" id="Re_2066909434_00008" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0008</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00084" stoichiometry="0.001"/>
+					<speciesReference species="SP_2066909434_00085" stoichiometry="0.098"/>
+					<speciesReference species="SP_2066909434_00086" stoichiometry="0.009"/>
+					<speciesReference species="SP_2066909434_00087" stoichiometry="0.01"/>
+					<speciesReference species="SP_2066909434_00088" stoichiometry="0.113"/>
+					<speciesReference species="SP_2066909434_00089" stoichiometry="0.827"/>
+					<speciesReference species="SP_2066909434_00090" stoichiometry="0.001"/>
+					<speciesReference species="SP_2066909434_00091" stoichiometry="0.134"/>
+					<speciesReference species="SP_2066909434_00092" stoichiometry="0.063"/>
+					<speciesReference species="SP_2066909434_00093" stoichiometry="0.067"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00094" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction name="BM0009" id="Re_2066909434_00009" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+		<p>oldId : BM0009</p>
+</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="SP_2066909434_00029" stoichiometry="53.35"/>
+					<speciesReference species="SP_2066909434_00021" stoichiometry="53.35"/>
+					<speciesReference species="SP_2066909434_00083" stoichiometry="0.01"/>
+					<speciesReference species="SP_2066909434_00041" stoichiometry="0.12"/>
+					<speciesReference species="SP_2066909434_00033" stoichiometry="0.17"/>
+					<speciesReference species="SP_2066909434_00036" stoichiometry="0.059"/>
+					<speciesReference species="SP_2066909434_00094" stoichiometry="0.0244"/>
+					<speciesReference species="SP_2066909434_00095" stoichiometry="0.21031"/>
+					<speciesReference species="SP_2066909434_00022" stoichiometry="0.51"/>
+					<speciesReference species="SP_2066909434_00068" stoichiometry="0.029"/>
+					<speciesReference species="SP_2066909434_00028" stoichiometry="0.031"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="SP_2066909434_00075" stoichiometry="53.35"/>
+					<speciesReference species="SP_2066909434_00096" stoichiometry="53.35"/>
+					<speciesReference species="SP_2066909434_00097" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+		</listOfReactions>
+	</model>
+</sbml>

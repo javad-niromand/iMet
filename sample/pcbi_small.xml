@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<model id="SynechocystisPCC6803" name="SynechocystisPCC6803">
+		<listOfUnitDefinitions>
+			<unitDefinition id="mmol_per_gDW_per_hr">
+				<listOfUnits>
+					<unit kind="mole" scale="-3"/>
+					<unit kind="gram" exponent="-1"/>
+					<unit kind="second" exponent="-1" multiplier="0.000277777777777778"/>
+				</listOfUnits>
+			</unitDefinition>
+		</listOfUnitDefinitions>
+		<listOfCompartments>
+			<compartment id="cyt" name="cytosol"/>
+			<compartment id="cym" name="cytoplasmic membrane"/>
+			<compartment id="pps" name="periplasmatic space"/>
+			<compartment id="tlm" name="thylakoid membrane"/>
+			<compartment id="cax" name="carboxysome"/>
+			<compartment id="tll" name="thylakoid lumen"/>
+			<compartment id="ext" name="extracellular space"/>
+		</listOfCompartments>
+		<listOfSpecies>
+			<species id="C00001_cyt" name="H2O_cyt" boundaryCondition="false" compartment="cyt">
+				<notes><body xmlns="http://www.w3.org/1999/xhtml"><p>FORMULA: H2O</p></body></notes>
+			</species>
+			<species id="B8_cyt" name="Pigment component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00002_cyt" name="ATP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H16N5O13P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00182_cyt" name="Glycogen_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C6H10O5R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B7_cyt" name="inorganic Ion component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B3_cyt" name="RNA component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B1_cyt" name="Protein component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B2_cyt" name="DNA component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B4_cyt" name="Cell wall component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B5_cyt" name="Lipid component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B6_cyt" name="Soluble pool component of biomass_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00009_cyt" name="Orthophosphate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: H3PO4</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00008_cyt" name="ADP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H15N5O10P2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="B0_ext_b" name="Biomass_ext_b" boundaryCondition="true" compartment="ext">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: R</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00078_cyt" name="L-Tryptophan_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C11H12N2O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00123_cyt" name="L-Leucine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C6H13NO2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00037_cyt" name="Glycine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C2H5NO2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00097_cyt" name="L-Cysteine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C3H7NO2S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00049_cyt" name="L-Aspartate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C4H7NO4</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00188_cyt" name="L-Threonine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C4H9NO3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00073_cyt" name="L-Methionine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C5H11NO2S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00062_cyt" name="L-Arginine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C6H14N4O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00082_cyt" name="L-Tyrosine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C9H11NO3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00041_cyt" name="L-Alanine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C3H7NO2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00152_cyt" name="L-Asparagine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C4H8N2O3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00065_cyt" name="L-Serine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C3H7NO3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00183_cyt" name="L-Valine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C5H11NO2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00064_cyt" name="L-Glutamine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C5H10N2O3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00135_cyt" name="L-Histidine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C6H9N3O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00407_cyt" name="L-Isoleucine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C6H13NO2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00047_cyt" name="L-Lysine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C6H14N2O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00025_cyt" name="L-Glutamate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C5H9NO4</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00079_cyt" name="L-Phenylalanine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C9H11NO2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00148_cyt" name="L-Proline_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C5H9NO2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00286_cyt" name="dGTP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H16N5O13P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00131_cyt" name="dATP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H16N5O12P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00459_cyt" name="dTTP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H17N2O14P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00458_cyt" name="dCTP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C9H16N3O13P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00013_cyt" name="Diphosphate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: P2H4O7</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00063_cyt" name="CTP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C9H16N3O14P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00075_cyt" name="UTP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C9H15N2O15P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00044_cyt" name="GTP_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H16N5O14P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C04932_cyt" name="2,3,2',3'-Tetrakis(3-hydroxytetradecanoyl)-D-glucosaminyl-1,6-beta-_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C68H129N2O20P</p>
+					</body>
+				</notes>
+			</species>
+			<species id="E11_cyt" name="Peptidoglycan_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C37H59N7O20</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00344_PG_cyt" name="Phosphatidylglycerol_PG_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C8H13O10PR2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C13508_SQDG_cyt" name="Sulfoquinovosyldiacylglycerol_SQDG_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C11H16O12SR2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C03692_MGDG_cyt" name="1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol_MGDG_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C11H16O10R2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C06037_DGDG_cyt" name="Digalactosyl-diacylglycerol_DGDG_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C17H26O15R2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C04574_cyt" name="di-trans,poly-cis-Undecaprenyl diphosphate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C55H92O7P2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00194_cyt" name="Cobamide coenzyme_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C72H100CoN18O17P</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00051_cyt" name="Glutathione_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H17N3O6S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00091_cyt" name="Succinyl-CoA_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C25H40N7O19P3S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00255_cyt" name="Riboflavin_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C17H20N4O6</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00004_cyt" name="NADH_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C21H29N7O14P2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00016_cyt" name="FAD_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C27H33N9O15P2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00019_cyt" name="S-Adenosyl-L-methionine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C15H22N6O5S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00134_cyt" name="Putrescine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C4H12N2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00032_cyt" name="Heme_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C34H32FeN4O4</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C15672_cyt" name="Heme O_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C49H58FeN4O5</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00024_cyt" name="Acetyl-CoA_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C23H38N7O17P3S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00018_cyt" name="Pyridoxal phosphate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C8H10NO6P</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00445_cyt" name="5,10-Methenyltetrahydrofolate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C20H22N7O6</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00251_cyt" name="Chorismate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C10H10O6</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00315_cyt" name="Spermidine_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C7H19N3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00005_cyt" name="NADPH_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C21H30N7O17P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00083_cyt" name="Malonyl-CoA_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C24H38N7O19P3S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C15670_cyt" name="Heme A_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C49H56FeN4O6</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00068_cyt" name="Thiamin diphosphate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C12H19N4O7P2S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00003_cyt" name="NAD+_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C21H28N7O14P2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00006_cyt" name="NADP+_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C21H29N7O17P3</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00010_cyt" name="CoA_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C21H36N7O16P3S</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00101_cyt" name="Tetrahydrofolate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C19H23N7O6</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00440_cyt" name="5-Methyltetrahydrofolate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C20H25N7O6</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00234_cyt" name="10-Formyltetrahydrofolate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C20H23N7O7</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00076_cyt" name="Calcium_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Ca</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C06232_cyt" name="Molybdate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: MoH2O4</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C14819_cyt" name="Fe3+_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Fe</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00238_cyt" name="Potassium_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: K</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00038_cyt" name="Zinc_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Zn</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00070_cyt" name="Copper_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Cu</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C01330_cyt" name="Sodium_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Na</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00034_cyt" name="Manganese_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Mn</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C14818_cyt" name="Fe2+_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Fe</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00305_cyt" name="Magnesium_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Mg</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00175_cyt" name="Cobalt ion_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: Co</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C01342_cyt" name="NH4+_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: NH4</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C00059_cyt" name="Sulfate_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: H2SO4</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C02477_cyt" name="alpha-Tocopherol_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C29H50O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C02059_cyt" name="Phylloquinone_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C31H46O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C14152_cyt" name="beta-Tocopherol_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C28H48O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C08592_cyt" name="Echinenone_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C40H54O</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C06098_cyt" name="Zeaxanthin_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C40H56O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C14151_cyt" name="delta-Tocopherol_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C27H46O2</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C05306_cyt" name="Chlorophyll a_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C55H72MgN4O5</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C02094_cyt" name="beta-Carotene_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C40H56</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C05435_cyt" name="gamma-Carotene_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C40H56</p>
+					</body>
+				</notes>
+			</species>
+			<species id="C02483_cyt" name="gamma-Tocopherol_cyt" boundaryCondition="false" compartment="cyt">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>FORMULA: C28H48O2</p>
+					</body>
+				</notes>
+			</species>
+		</listOfSpecies>
+		<listOfReactions>
+			<reaction id="R82" name="R82" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioPro)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="C00078_cyt" stoichiometry="0.140"/>
+					<speciesReference species="C00123_cyt" stoichiometry="1.029"/>
+					<speciesReference species="C00037_cyt" stoichiometry="0.666"/>
+					<speciesReference species="C00097_cyt" stoichiometry="0.090"/>
+					<speciesReference species="C00049_cyt" stoichiometry="0.454"/>
+					<speciesReference species="C00188_cyt" stoichiometry="0.496"/>
+					<speciesReference species="C00073_cyt" stoichiometry="0.177"/>
+					<speciesReference species="C00062_cyt" stoichiometry="0.455"/>
+					<speciesReference species="C00082_cyt" stoichiometry="0.263"/>
+					<speciesReference species="C00041_cyt" stoichiometry="0.766"/>
+					<speciesReference species="C00152_cyt" stoichiometry="0.366"/>
+					<speciesReference species="C00065_cyt" stoichiometry="0.524"/>
+					<speciesReference species="C00183_cyt" stoichiometry="0.608"/>
+					<speciesReference species="C00064_cyt" stoichiometry="0.502"/>
+					<speciesReference species="C00135_cyt" stoichiometry="0.168"/>
+					<speciesReference species="C00407_cyt" stoichiometry="0.566"/>
+					<speciesReference species="C00047_cyt" stoichiometry="0.378"/>
+					<speciesReference species="C00025_cyt" stoichiometry="0.546"/>
+					<speciesReference species="C00079_cyt" stoichiometry="0.362"/>
+					<speciesReference species="C00148_cyt" stoichiometry="0.463"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="C00001_cyt" stoichiometry="9.0197"/>
+					<speciesReference species="B1_cyt" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<ci> FLUX_VALUE </ci>
+					</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R83" name="R83" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioDNA)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="C00286_cyt" stoichiometry="0.7772"/>
+					<speciesReference species="C00131_cyt" stoichiometry="0.8487"/>
+					<speciesReference species="C00459_cyt" stoichiometry="0.8517"/>
+					<speciesReference species="C00458_cyt" stoichiometry="0.7749"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="C00013_cyt" stoichiometry="3.2525"/>
+					<speciesReference species="B2_cyt" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<ci> FLUX_VALUE </ci>
+						</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R84" name="R84" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioRNA)</p>
+					</body>
+				</notes>
+			<listOfReactants>
+				<speciesReference species="C00063_cyt" stoichiometry="0.7799"/>
+				<speciesReference species="C00075_cyt" stoichiometry="0.8012"/>
+				<speciesReference species="C00002_cyt" stoichiometry="0.7300"/>
+				<speciesReference species="C00044_cyt" stoichiometry="0.8080"/>
+			</listOfReactants>
+			<listOfProducts>
+				<speciesReference species="B3_cyt" stoichiometry="1"/>
+				<speciesReference species="C00013_cyt" stoichiometry="3.1191"/>
+			</listOfProducts>
+				<kineticLaw>
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<ci> FLUX_VALUE </ci>
+					</math>
+				<listOfParameters>
+					<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+					<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+					<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+					<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+				</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R85" name="R85" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioCellwall)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="C04932_cyt" stoichiometry="0.4276"/>
+					<speciesReference species="E11_cyt" stoichiometry="0.4276"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="B4_cyt" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<ci> FLUX_VALUE </ci>
+						</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R86" name="R86" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioLip)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="C00344_PG_cyt" stoichiometry="0.1000"/>
+					<speciesReference species="C13508_SQDG_cyt" stoichiometry="0.2550"/>
+					<speciesReference species="C03692_MGDG_cyt" stoichiometry="0.380"/>
+					<speciesReference species="C06037_DGDG_cyt" stoichiometry="0.2650"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="B5_cyt" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<ci> FLUX_VALUE </ci>
+						</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R87" name="R87" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioPool)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="C04574_cyt" stoichiometry="0.002"/>
+					<speciesReference species="C00194_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00051_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00091_cyt" stoichiometry="0.003"/>
+					<speciesReference species="C00255_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00004_cyt" stoichiometry="0.002"/>
+					<speciesReference species="C00016_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00019_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00134_cyt" stoichiometry="1.147"/>
+					<speciesReference species="C00032_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C15672_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00024_cyt" stoichiometry="0.010"/>
+					<speciesReference species="C00018_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00445_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00251_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00315_cyt" stoichiometry="0.233"/>
+					<speciesReference species="C00005_cyt" stoichiometry="0.012"/>
+					<speciesReference species="C00083_cyt" stoichiometry="0.001"/>
+					<speciesReference species="C15670_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00068_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00003_cyt" stoichiometry="0.062"/>
+					<speciesReference species="C00006_cyt" stoichiometry="0.004"/>
+					<speciesReference species="C00010_cyt" stoichiometry="0.006"/>
+					<speciesReference species="C00101_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00440_cyt" stoichiometry="0.008"/>
+					<speciesReference species="C00234_cyt" stoichiometry="0.008"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="B6_cyt" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<ci> FLUX_VALUE </ci>
+					</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R88" name="R88" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioIons)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="C00076_cyt" stoichiometry="0.454"/>
+					<speciesReference species="C06232_cyt" stoichiometry="0.303"/>
+					<speciesReference species="C14819_cyt" stoichiometry="0.682"/>
+					<speciesReference species="C00238_cyt" stoichiometry="17.040"/>
+					<speciesReference species="C00038_cyt" stoichiometry="0.303"/>
+					<speciesReference species="C00070_cyt" stoichiometry="0.303"/>
+					<speciesReference species="C01330_cyt" stoichiometry="0.379"/>
+					<speciesReference species="C00034_cyt" stoichiometry="0.303"/>
+					<speciesReference species="C00009_cyt" stoichiometry="0.379"/>
+					<speciesReference species="C14818_cyt" stoichiometry="0.682"/>
+					<speciesReference species="C00305_cyt" stoichiometry="0.757"/>
+					<speciesReference species="C00175_cyt" stoichiometry="0.303"/>
+					<speciesReference species="C01342_cyt" stoichiometry="1.136"/>
+					<speciesReference species="C00059_cyt" stoichiometry="0.379"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="B7_cyt" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<ci> FLUX_VALUE </ci>
+						</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R89" name="R89" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (BioPigs)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="C02477_cyt" stoichiometry="0.010"/>
+					<speciesReference species="C02059_cyt" stoichiometry="0.067"/>
+					<speciesReference species="C14152_cyt" stoichiometry="0.001"/>
+					<speciesReference species="C08592_cyt" stoichiometry="0.098"/>
+					<speciesReference species="C06098_cyt" stoichiometry="0.113"/>
+					<speciesReference species="C14151_cyt" stoichiometry="0.009"/>
+					<speciesReference species="C05306_cyt" stoichiometry="0.827"/>
+					<speciesReference species="C02094_cyt" stoichiometry="0.134"/>
+					<speciesReference species="C05435_cyt" stoichiometry="0.063"/>
+					<speciesReference species="C02483_cyt" stoichiometry="0.001"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="B8_cyt" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<ci> FLUX_VALUE </ci>
+						</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			<reaction id="R90" name="R90" reversible="false">
+				<notes>
+					<body xmlns="http://www.w3.org/1999/xhtml">
+						<p>GENE_ASSOCIATION: (Biomass)</p>
+					</body>
+				</notes>
+				<listOfReactants>
+					<speciesReference species="B3_cyt" stoichiometry="0.17"/>
+					<speciesReference species="C00001_cyt" stoichiometry="53.350"/>
+					<speciesReference species="B8_cyt" stoichiometry="0.0244"/>
+					<speciesReference species="C00002_cyt" stoichiometry="53.350"/>
+					<speciesReference species="C00182_cyt" stoichiometry="0.21031"/>
+					<speciesReference species="B7_cyt" stoichiometry="0.01"/>
+					<speciesReference species="B1_cyt" stoichiometry="0.51"/>
+					<speciesReference species="B2_cyt" stoichiometry="0.031"/>
+					<speciesReference species="B4_cyt" stoichiometry="0.059"/>
+					<speciesReference species="B5_cyt" stoichiometry="0.12"/>
+					<speciesReference species="B6_cyt" stoichiometry="0.029"/>
+				</listOfReactants>
+				<listOfProducts>
+					<speciesReference species="C00009_cyt" stoichiometry="53.350"/>
+					<speciesReference species="C00008_cyt" stoichiometry="53.350"/>
+					<speciesReference species="B0_ext_b" stoichiometry="1"/>
+				</listOfProducts>
+				<kineticLaw>
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<ci> FLUX_VALUE </ci>
+					</math>
+					<listOfParameters>
+						<parameter id="LOWER_BOUND" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="UPPER_BOUND" value="1000" units="mmol_per_gDW_per_hr"/>
+						<parameter id="FLUX_VALUE" value="0" units="mmol_per_gDW_per_hr"/>
+						<parameter id="OBJECTIVE_COEFFICIENT" value="0" units="mmol_per_gDW_per_hr"/>
+					</listOfParameters>
+				</kineticLaw>
+			</reaction>
+			</listOfReactions>
+   </model>
+</sbml>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1">
+   <model id="CNA_Syne_RN" name="Syne_RN">
+		<listOfCompartments>
+			<compartment id="External_Species"/>
+			<compartment id="Internal_Species"/>
+		</listOfCompartments>
+		<listOfSpecies>
+			<species id="C00183_cyt" name="L-Valine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00025_cyt" name="L-Glutamate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00407_cyt" name="L-Isoleucine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00188_cyt" name="L-Threonine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00152_cyt" name="L-Asparagine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00123_cyt" name="L-Leucine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00079_cyt" name="L-Phenylalanine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00047_cyt" name="L-Lysine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00041_cyt" name="L-Alanine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00062_cyt" name="L-Arginine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00082_cyt" name="L-Tyrosine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00078_cyt" name="L-Tryptophan_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00097_cyt" name="L-Cysteine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00073_cyt" name="L-Methionine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00135_cyt" name="L-Histidine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00037_cyt" name="Glycine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00064_cyt" name="L-Glutamine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00148_cyt" name="L-Proline_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00049_cyt" name="L-Aspartate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00065_cyt" name="L-Serine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00001_cyt" name="H2O_cyt" boundaryCondition="true" compartment="External_Species"/>
+			<species id="B1_cyt" name="Proteincomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00458_cyt" name="dCTP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00459_cyt" name="dTTP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00286_cyt" name="dGTP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00131_cyt" name="dATP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00013_cyt" name="Diphosphate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B2_cyt" name="DNAcomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00002_cyt" name="ATP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00044_cyt" name="GTP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00075_cyt" name="UTP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00063_cyt" name="CTP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B3_cyt" name="RNAcomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="E11_cyt" name="Peptidoglycan_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C04932_cyt" name="2,3,2ampapos,3ampapos-Tetrakis(3-hydroxytetradecanoyl)-D-glucosaminyl-1,6-beta-_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B4_cyt" name="Cellwallcomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C06037_DGDG_cyt" name="Digalactosyl-diacylglycerol_DGDG_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C13508_SQDG_cyt" name="Sulfoquinovosyldiacylglycerol_SQDG_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00344_PG_cyt" name="Phosphatidylglycerol_PG_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C03692_MGDG_cyt" name="1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol_MGDG_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B5_cyt" name="Lipidcomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00004_cyt" name="NADH_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00010_cyt" name="CoA_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00251_cyt" name="Chorismate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00091_cyt" name="Succinyl-CoA_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00024_cyt" name="Acetyl-CoA_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00016_cyt" name="FAD_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00445_cyt" name="5,10-Methenyltetrahydrofolate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00018_cyt" name="Pyridoxalphosphate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C04574_cyt" name="di-trans,poly-cis-Undecaprenyldiphosphate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00003_cyt" name="NAD+_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00019_cyt" name="S-Adenosyl-L-methionine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00006_cyt" name="NADP+_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00234_cyt" name="10-Formyltetrahydrofolate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00134_cyt" name="Putrescine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00068_cyt" name="Thiamindiphosphate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00005_cyt" name="NADPH_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C15672_cyt" name="HemeO_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00315_cyt" name="Spermidine_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00194_cyt" name="Cobamidecoenzyme_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00083_cyt" name="Malonyl-CoA_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00101_cyt" name="Tetrahydrofolate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C15670_cyt" name="HemeA_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00051_cyt" name="Glutathione_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00440_cyt" name="5-Methyltetrahydrofolate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00255_cyt" name="Riboflavin_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00032_cyt" name="Heme_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B6_cyt" name="Solublepoolcomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C14819_cyt" name="Fe3+_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00059_cyt" name="Sulfate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00038_cyt" name="Zinc_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C14818_cyt" name="Fe2+_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C06232_cyt" name="Molybdate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C01330_cyt" name="Sodium_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00009_cyt" name="Orthophosphate_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00034_cyt" name="Manganese_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00238_cyt" name="Potassium_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00305_cyt" name="Magnesium_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00175_cyt" name="Cobaltion_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00070_cyt" name="Copper_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00076_cyt" name="Calcium_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C01342_cyt" name="NH4+_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B7_cyt" name="Ioncomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C02483_cyt" name="gamma-Tocopherol_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C08592_cyt" name="Echinenone_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C14151_cyt" name="delta-Tocopherol_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C02477_cyt" name="alpha-Tocopherol_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C06098_cyt" name="Zeaxanthin_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C05306_cyt" name="Chlorophylla_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C14152_cyt" name="beta-Tocopherol_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C02094_cyt" name="beta-Carotene_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C05435_cyt" name="gamma-Carotene_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C02059_cyt" name="Phylloquinone_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B8_cyt" name="Pigmentcomponentofbiomass_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00182_cyt" name="Glycogen_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="C00008_cyt" name="ADP_cyt" boundaryCondition="false" compartment="Internal_Species"/>
+			<species id="B0_ext" name="Biomass_ext" boundaryCondition="true" compartment="External_Species"/>
+		</listOfSpecies>
+		<listOfReactions>
+			<reaction id="BM0001" name="BM0001" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C00183_cyt" stoichiometry="0.608"/>
+				   <speciesReference species="C00025_cyt" stoichiometry="0.546"/>
+				   <speciesReference species="C00407_cyt" stoichiometry="0.566"/>
+				   <speciesReference species="C00188_cyt" stoichiometry="0.496"/>
+				   <speciesReference species="C00152_cyt" stoichiometry="0.366"/>
+				   <speciesReference species="C00123_cyt" stoichiometry="1.029"/>
+				   <speciesReference species="C00079_cyt" stoichiometry="0.362"/>
+				   <speciesReference species="C00047_cyt" stoichiometry="0.378"/>
+				   <speciesReference species="C00041_cyt" stoichiometry="0.766"/>
+				   <speciesReference species="C00062_cyt" stoichiometry="0.455"/>
+				   <speciesReference species="C00082_cyt" stoichiometry="0.263"/>
+				   <speciesReference species="C00078_cyt" stoichiometry="0.14"/>
+				   <speciesReference species="C00097_cyt" stoichiometry="0.09"/>
+				   <speciesReference species="C00073_cyt" stoichiometry="0.177"/>
+				   <speciesReference species="C00135_cyt" stoichiometry="0.168"/>
+				   <speciesReference species="C00037_cyt" stoichiometry="0.666"/>
+				   <speciesReference species="C00064_cyt" stoichiometry="0.502"/>
+				   <speciesReference species="C00148_cyt" stoichiometry="0.463"/>
+				   <speciesReference species="C00049_cyt" stoichiometry="0.454"/>
+				   <speciesReference species="C00065_cyt" stoichiometry="0.524"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="C00001_cyt" stoichiometry="9.0197"/>
+				   <speciesReference species="B1_cyt" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0002" name="BM0002" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C00458_cyt" stoichiometry="0.7749"/>
+				   <speciesReference species="C00459_cyt" stoichiometry="0.8517"/>
+				   <speciesReference species="C00286_cyt" stoichiometry="0.7772"/>
+				   <speciesReference species="C00131_cyt" stoichiometry="0.8487"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="C00013_cyt" stoichiometry="3.2525"/>
+				   <speciesReference species="B2_cyt" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0003" name="BM0003" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C00002_cyt" stoichiometry="0.73"/>
+				   <speciesReference species="C00044_cyt" stoichiometry="0.808"/>
+				   <speciesReference species="C00075_cyt" stoichiometry="0.8012"/>
+				   <speciesReference species="C00063_cyt" stoichiometry="0.7799"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="B3_cyt" stoichiometry="1"/>
+				   <speciesReference species="C00013_cyt" stoichiometry="3.1191"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0004" name="BM0004" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="E11_cyt" stoichiometry="0.4276"/>
+				   <speciesReference species="C04932_cyt" stoichiometry="0.4276"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="B4_cyt" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0005" name="BM0005" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C06037_DGDG_cyt" stoichiometry="0.265"/>
+				   <speciesReference species="C13508_SQDG_cyt" stoichiometry="0.255"/>
+				   <speciesReference species="C00344_PG_cyt" stoichiometry="0.1"/>
+				   <speciesReference species="C03692_MGDG_cyt" stoichiometry="0.38"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="B5_cyt" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0006" name="BM0006" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C00004_cyt" stoichiometry="0.002"/>
+				   <speciesReference species="C00010_cyt" stoichiometry="0.006"/>
+				   <speciesReference species="C00251_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00091_cyt" stoichiometry="0.003"/>
+				   <speciesReference species="C00024_cyt" stoichiometry="0.01"/>
+				   <speciesReference species="C00016_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00445_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00018_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C04574_cyt" stoichiometry="0.002"/>
+				   <speciesReference species="C00003_cyt" stoichiometry="0.062"/>
+				   <speciesReference species="C00019_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00006_cyt" stoichiometry="0.004"/>
+				   <speciesReference species="C00234_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00134_cyt" stoichiometry="1.147"/>
+				   <speciesReference species="C00068_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00005_cyt" stoichiometry="0.012"/>
+				   <speciesReference species="C15672_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00315_cyt" stoichiometry="0.233"/>
+				   <speciesReference species="C00194_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00083_cyt" stoichiometry="0.001"/>
+				   <speciesReference species="C00101_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C15670_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00051_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00440_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00255_cyt" stoichiometry="0.008"/>
+				   <speciesReference species="C00032_cyt" stoichiometry="0.008"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="B6_cyt" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0007" name="BM0007" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C14819_cyt" stoichiometry="0.682"/>
+				   <speciesReference species="C00059_cyt" stoichiometry="0.379"/>
+				   <speciesReference species="C00038_cyt" stoichiometry="0.303"/>
+				   <speciesReference species="C14818_cyt" stoichiometry="0.682"/>
+				   <speciesReference species="C06232_cyt" stoichiometry="0.303"/>
+				   <speciesReference species="C01330_cyt" stoichiometry="0.379"/>
+				   <speciesReference species="C00009_cyt" stoichiometry="0.379"/>
+				   <speciesReference species="C00034_cyt" stoichiometry="0.303"/>
+				   <speciesReference species="C00238_cyt" stoichiometry="17.04"/>
+				   <speciesReference species="C00305_cyt" stoichiometry="0.757"/>
+				   <speciesReference species="C00175_cyt" stoichiometry="0.303"/>
+				   <speciesReference species="C00070_cyt" stoichiometry="0.303"/>
+				   <speciesReference species="C00076_cyt" stoichiometry="0.454"/>
+				   <speciesReference species="C01342_cyt" stoichiometry="1.136"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="B7_cyt" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0008" name="BM0008" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C02483_cyt" stoichiometry="0.001"/>
+				   <speciesReference species="C08592_cyt" stoichiometry="0.098"/>
+				   <speciesReference species="C14151_cyt" stoichiometry="0.009"/>
+				   <speciesReference species="C02477_cyt" stoichiometry="0.01"/>
+				   <speciesReference species="C06098_cyt" stoichiometry="0.113"/>
+				   <speciesReference species="C05306_cyt" stoichiometry="0.827"/>
+				   <speciesReference species="C14152_cyt" stoichiometry="0.001"/>
+				   <speciesReference species="C02094_cyt" stoichiometry="0.134"/>
+				   <speciesReference species="C05435_cyt" stoichiometry="0.063"/>
+				   <speciesReference species="C02059_cyt" stoichiometry="0.067"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="B8_cyt" stoichiometry="1"/>
+				</listOfProducts>
+			</reaction>
+			<reaction id="BM0009" name="BM0009" reversible="false">
+				<listOfReactants>
+				   <speciesReference species="C00002_cyt" stoichiometry="53.35"/>
+				   <speciesReference species="C00001_cyt" stoichiometry="53.35"/>
+				   <speciesReference species="B7_cyt" stoichiometry="0.01"/>
+				   <speciesReference species="B5_cyt" stoichiometry="0.12"/>
+				   <speciesReference species="B3_cyt" stoichiometry="0.17"/>
+				   <speciesReference species="B4_cyt" stoichiometry="0.059"/>
+				   <speciesReference species="B8_cyt" stoichiometry="0.0244"/>
+				   <speciesReference species="C00182_cyt" stoichiometry="0.21031"/>
+				   <speciesReference species="B1_cyt" stoichiometry="0.51"/>
+				   <speciesReference species="B6_cyt" stoichiometry="0.029"/>
+				   <speciesReference species="B2_cyt" stoichiometry="0.031"/>
+				</listOfReactants>
+				<listOfProducts>
+				   <speciesReference species="C00009_cyt" stoichiometry="53.35"/>
+				   <speciesReference species="C00008_cyt" stoichiometry="53.35"/>
+				   <speciesReference species="B0_ext" stoichiometry="1"/>
+				</listOfProducts>
+			 </reaction>
+		</listOfReactions>
+   </model>
+</sbml>
